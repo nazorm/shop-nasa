@@ -45,13 +45,11 @@ function App() {
     <div className="App">
       {status === 'loading' ? 'loading...' :
         <div className='nasacard-container'>
-          {currentPosts.map((nasaData: any, index: number) => {
-            console.log(nasaData.data.nasa_id)
+          {currentPosts.map((nasaData: any,) => {
             return (
               <NasaCard
-                key={index}
+                key={nasaData.data[0].nasa_id}
                 data={nasaData.data}
-                album={nasaData.album}
                 links={nasaData.links}
 
               />
