@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --default-background-color: whitesmoke;
+  --default-text-color: black;
+}
+
+.pagination {
+  width: 100%;
+  background-color: var(--default-background-color);
+  color: var(--default-text-color);
+  .pages {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      border: 1px solid var(--default-text-color);
+      padding: 5px;
+      border-radius: 5px;
+      font-weight: 700;
+      margin: 0 5px;
+    }
+    @media only screen and (min-width: 700px) {
+      width: 15%;
+    }
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
