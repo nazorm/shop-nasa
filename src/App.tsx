@@ -11,7 +11,7 @@ function App() {
 
   // fetch Nasa data
   const fetchData = async (currentFetchedPage: number) => {
-    const { data } = await axios.get(`http://images-api.nasa.gov/search?page=${currentFetchedPage}&q=apollo+11&description=moon+landing&media_type=image`)
+    const { data } = await axios.get(`https://images-api.nasa.gov/search?page=${currentFetchedPage}&q=apollo+11&description=moon+landing&media_type=image`)
     return data
   }
 
