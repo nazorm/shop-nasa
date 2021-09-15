@@ -46,8 +46,8 @@ const NasaCard: FunctionComponent<NasaCardProps> = ({ data, links }) => {
         alt="liked"
         onClick={() => handleLiked(data[0].nasa_id)}
       />
-      <span className='date' style={{ margin: '10px' }}>Date Captured:{date}</span><br />
-      <span className='location' style={{ margin: '10px' }}>Location: {data[0].location}</span>
+      <span className='date-captured' >Date Captured:<span className='date'>{date}</span></span><br />
+      <span className='location-captured'>Location: <span className='location'>{data[0].location}</span></span>
       <p className='description' style={{ margin: '10px' }}>{data[0].description}</p>
     </div>);
 }

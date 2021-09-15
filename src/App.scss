@@ -93,6 +93,12 @@
   border-radius: 10px;
   width: 100%;
   background-color: whitesmoke;
+  .date-captured,
+  .location-captured {
+    font-weight: 700;
+    font-size: 13px;
+    margin: 2px 10px;
+  }
 }
 .photo-credit {
   margin: 10px;
